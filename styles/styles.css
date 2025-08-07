@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../SF-Pro-Font/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../SF-Pro-Font/SFProDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(246, 250, 253);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+.facebook-logo-container{
+  height: 100px;
+  width: 300px;
+}
+
+.border{
+  border-top: 1px solid rgb(205, 201, 201);
+ margin: 10px -30px;
+ width: 500px;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.header1{
+    font-family: 'SF Pro Display', Helvetica;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.header2{
+  color: rgb(85, 85, 85);
+  font-size: 1.1rem;
+  padding-bottom: 5px;
+}
+.first-name{
+  margin-right: 2px;
+}
+.name{
+  padding: 8px 10px; 
+  border: 1px solid rgb(208, 205, 205);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.name::placeholder,
+.email::placeholder,
+.password::placeholder{
+font-family: Helvetica;
+color:rgb(147, 147, 147);
+}
+
+.dob,
+.gender{
+font-family: Helvetica;
+color:rgb(117, 116, 116);
+font-size: 0.8rem;
+}
+.dob-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#dob_day,
+#dob_month,
+#dob_year{
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(208, 205, 205);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.gender-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+   width: 100%;
+  height: 30px;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.genders{
+    border: 1px solid rgb(208, 205, 205);
+   border-radius: 5px;
+   padding: 8px 5px;
+   width: 134px;
+   padding-left: 10px;
+}
+
+#male{
+  margin-left: 60px;
+}
+#female,
+#custom{
+  margin-left: 40px;
+}
+
+.input-container{
+  display: grid;
+  margin-top: 20px;
+}
+
+.email,
+.password{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 8px 10px; 
+  border: 1px solid rgb(208, 205, 205);
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.text,
+.agree{
+  color: rgb(90, 89, 89);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  width: 470px;
+  margin-top: 20px;
+}
+
+a{
+  color: rgb(26, 56, 155);
+  text-decoration: none;
+}
+
+.account{ 
+  color:#1877f2;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ align-items: center;
+}
+.sign-up-button{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: rgb(0, 164, 0);
+  color: white;
+  width: 215px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.account{
+  margin-top: 20px;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.form-account-container{
+  flex: 1;
+  width: 500px;
+  height: 680px;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  padding: 5px 30px;
+  border-radius: 10px;
+  box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+.tooltip-icon {
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(105, 102, 102);
+  color: #dedada;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0px 3px;
+  cursor: pointer;
+}
+
+ .tooltip{
+  position: absolute;
+  left: 130px;
+background-color: rgb(23, 23, 23); 
+color: rgb(161, 161, 161);
+padding: 4px 8px;
+border-radius: 2px;
+font-size: 0.8rem;
+font-weight: normal;
+opacity: 0;
+transition: opacity 0.15s;
+pointer-events: none;
+white-space: nowrap;
+}
+
+.tooltip-icon:hover .tooltip
+{
+opacity: 1;
+}
+
+input:focus {
+  border: 1px solid black;
+  outline: none;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+
+input:valid:not(:placeholder-shown) {
+  border: 1px solid black;
+}
+.visually-hidden {
+ display: none;
+}
