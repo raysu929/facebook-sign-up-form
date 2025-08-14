@@ -8,7 +8,7 @@ This project was created from scratch as a personal learning exercise. It is **n
 
 ## 📸 Live Preview
 
-👉 [Click here to view the live demo](https://raysu929.github.io/facebook-sign-up-form/)
+👉 [Click here to view the live demo](https://fbk-signup-form.netlify.app/)
 
 ## Features
 
